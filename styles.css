@@ -23,8 +23,10 @@ body {
 
 header {
 	display: block;
-	background-color: #000000;
-
+	position: fixed;
+	z-index: 50;
+	width: 100vw;
+	background-color: #000000
 }
 
 
@@ -42,6 +44,7 @@ nav>ul {
 	font-size: 30px;
 	width: 25vw;
 	padding-right: 2vw;
+	text-shadow: var(--font-color2) 2px 0 10px;
 }
 
 nav>ul>li:hover {
@@ -69,14 +72,14 @@ section {
 }
 
 .video-wrap {
-	height: 650px;
+	height: 800px;
 	background: none;
 	overflow: hidden
 }
 
 .video-banner {
 	position: relative;
-	top: -200px;
+	top: -170px;
 	z-index: 20;
 }
 
@@ -119,5 +122,80 @@ section {
 	100% {
 		opacity: 1
 	}
+
+}
+
+
+
+.album-info {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	font-size: 28px;
+	padding-top: 250px;
+	height: 80vh;
+}
+
+.album-info img {
+	height: 500px;
+	width: 509px;
+	animation: slide-in-image;
+	animation-timeline: scroll();
+}
+
+@keyframes slide-in-image {
+	from {
+		transform: translateX(-150%);
+	}
+
+	to {
+		transform: translateX(50%);
+	}
+}
+
+@keyframes slide-in-text {
+	from {
+		transform: translateX(200%);
+	}
+
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+.album-info>p {
+	width: 400px;
+	font-size: 30px;
+	animation: slide-in-text;
+	animation-timeline: scroll();
+}
+
+p>a>span:hover {
+	color: var(--font-color1);
+	cursor: pointer;
+}
+
+p>a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.band-image {
+	background: url("Resources/Band01.jpg");
+	background-attachment: fixed;
+	margin: 0;
+	height: 50vh;
+}
+
+.band-image2 {
+
+	background-image: url("Resources/Band02.jpg");
+	background-attachment: fixed;
+	background-size: 100vw;
+	margin: 0;
+	height: 50vh;
+	width: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
 
 }
