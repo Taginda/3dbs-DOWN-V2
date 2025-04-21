@@ -145,26 +145,26 @@ section {
 	width: 509px;
 	animation: slide-in-image;
 	animation-timeline: scroll();
-	animation-range: 10% 70%
+	animation-range: 5% 80%
 }
 
 @keyframes slide-in-image {
 	from {
-		transform: translateX(-150%);
+		transform: translateX(-500%);
 	}
 
 	to {
-		transform: translateX(0%);
+		transform: translateX(50%);
 	}
 }
 
 @keyframes slide-in-text {
 	from {
-		transform: translateX(150%);
+		transform: translateX(500%);
 	}
 
 	to {
-		transform: translateX(-0%);
+		transform: translateX(-50%);
 	}
 }
 
@@ -173,7 +173,7 @@ section {
 	font-size: 30px;
 	animation: slide-in-text;
 	animation-timeline: scroll();
-	animation-range: 10% 70%
+	animation-range: 5% 80%
 }
 
 p>a>span:hover {
