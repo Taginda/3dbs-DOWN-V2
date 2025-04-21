@@ -126,7 +126,10 @@ section {
 
 }
 
-
+#about {
+	background: #e0dada;
+	background: radial-gradient(circle, rgba(224, 218, 218, 0.95) 0%, rgba(5, 5, 5, 1) 50%);
+}
 
 .album-info {
 	display: flex;
@@ -144,8 +147,9 @@ section {
 	height: 500px;
 	width: 509px;
 	animation: slide-in-image;
+	box-shadow: 10px 5px 5px black;
 	animation-timeline: scroll();
-	animation-range: 5% 80%
+	animation-range: 5% 75%
 }
 
 @keyframes slide-in-image {
@@ -173,7 +177,9 @@ section {
 	font-size: 30px;
 	animation: slide-in-text;
 	animation-timeline: scroll();
-	animation-range: 5% 80%
+	animation-range: 5% 75%;
+	text-shadow: 10px 5px 5px black;
+	padding-top: 100px
 }
 
 p>a>span:hover {
