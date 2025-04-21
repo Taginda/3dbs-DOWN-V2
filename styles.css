@@ -209,5 +209,24 @@ p>a {
 	width: 100vw;
 	background-position: center;
 	background-repeat: no-repeat;
-
 }
+
+.events {
+	display: block;
+	margin: auto;
+	width: 100%;
+	padding-left: 20vw;
+	padding-top: 10vh;
+	animation: slide-in-events;
+	animation-timeline: scroll();
+	animation-range: 70% 100%
+}
+
+@keyframes slide-in-events {
+	from {
+		transform: translateX(-500%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
