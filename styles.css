@@ -17,6 +17,7 @@
 
 body {
 	margin: 0;
+	overflow-x: hidden;
 }
 
 /* Header & NAV */
@@ -134,6 +135,9 @@ section {
 	font-size: 28px;
 	padding-top: 250px;
 	height: 80vh;
+	width: 100%;
+
+
 }
 
 .album-info img {
@@ -141,25 +145,26 @@ section {
 	width: 509px;
 	animation: slide-in-image;
 	animation-timeline: scroll();
+	animation-range: 10% 70%
 }
 
 @keyframes slide-in-image {
 	from {
-		transform: translateX(-150%);
+		transform: translateX(-100%);
 	}
 
 	to {
-		transform: translateX(50%);
+		transform: translateX(0%);
 	}
 }
 
 @keyframes slide-in-text {
 	from {
-		transform: translateX(200%);
+		transform: translateX(100%);
 	}
 
 	to {
-		transform: translateX(-50%);
+		transform: translateX(-0%);
 	}
 }
 
@@ -168,6 +173,7 @@ section {
 	font-size: 30px;
 	animation: slide-in-text;
 	animation-timeline: scroll();
+	animation-range: 10% 70%
 }
 
 p>a>span:hover {
