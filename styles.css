@@ -127,8 +127,8 @@ section {
 }
 
 #about {
-	background: #e0dada;
-	background: radial-gradient(circle, rgba(224, 218, 218, 0.95) 0%, rgba(5, 5, 5, 1) 50%);
+	background: #b8aeae;
+	background: radial-gradient(circle, rgba(184, 174, 174, 1) 0%, rgba(5, 5, 5, 1) 57%);
 }
 
 .album-info {
@@ -149,7 +149,7 @@ section {
 	animation: slide-in-image;
 	box-shadow: 10px 5px 5px black;
 	animation-timeline: scroll();
-	animation-range: 5% 75%
+	animation-range: 5% 50%
 }
 
 @keyframes slide-in-image {
@@ -177,7 +177,7 @@ section {
 	font-size: 30px;
 	animation: slide-in-text;
 	animation-timeline: scroll();
-	animation-range: 5% 75%;
+	animation-range: 5% 50%;
 	text-shadow: 10px 5px 5px black;
 	padding-top: 100px
 }
@@ -219,7 +219,7 @@ p>a {
 	padding-top: 10vh;
 	animation: slide-in-events;
 	animation-timeline: scroll();
-	animation-range: 40% 100%
+	animation-range: 20% 65%
 }
 
 @keyframes slide-in-events {
@@ -230,3 +230,15 @@ p>a {
 	to {
 		transform: translateX(0%);
 	}
+}
+
+.band-image3 {
+	background-image: url("Resources/Band03.jpg");
+	background-attachment: fixed;
+	background-size: 100vw;
+	margin: 0;
+	height: 50vh;
+	width: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+}
