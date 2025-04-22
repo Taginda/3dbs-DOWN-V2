@@ -206,7 +206,7 @@ p>a {
 
 .band-image2 {
 
-	background-image: url("Resources/Band02.jpg");
+	background-image: url("Resources/Band02.webp");
 	background-attachment: fixed;
 	background-size: 100vw;
 	margin: 0;
@@ -238,7 +238,7 @@ p>a {
 }
 
 .band-image3 {
-	background-image: url("Resources/Band03.jpg");
+	background-image: url("Resources/Band03.webp");
 	background-attachment: fixed;
 	background-size: 100vw;
 	margin: 0;
