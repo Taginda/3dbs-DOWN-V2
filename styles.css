@@ -154,7 +154,7 @@ section {
 	animation: slide-in-image;
 	box-shadow: 10px 5px 5px black;
 	animation-timeline: scroll();
-	animation-range: 5% 50%
+	animation-range: 5% 48%
 }
 
 @keyframes slide-in-image {
@@ -182,7 +182,7 @@ section {
 	font-size: 30px;
 	animation: slide-in-text;
 	animation-timeline: scroll();
-	animation-range: 5% 50%;
+	animation-range: 5% 48%;
 	text-shadow: 10px 5px 5px black;
 	padding-top: 100px
 }
