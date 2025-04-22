@@ -10,9 +10,14 @@
 	scroll-behavior: smooth;
 }
 
+
 @font-face {
 	font-family: PoplarStd;
 	src: url('PoplarStd.otf');
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -241,4 +246,94 @@ p>a {
 	width: 100vw;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.container {
+	display: block;
+	margin: auto;
+	width: 56.7vw;
+	height: 78.5vh;
+	padding-top: 8rem;
+	overflow-x: visible;
+	transform: scale(0.1);
+	animation: zoom-in;
+	animation-timeline: scroll();
+	animation-range: 85% 100%;
+
+}
+
+.carousel {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	display: grid;
+	gap: 3rem;
+	grid-auto-flow: column;
+	grid-auto-columns: 100%;
+	gap: 10rem;
+
+	overflow-x: auto;
+
+	scroll-snap-type: x mandatory;
+
+	anchor-name: --carousel;
+
+	overflow-x: hidden;
+
+
+	>li {
+		scroll-snap-align: center;
+	}
+
+	&::scroll-button(*) {
+		position: fixed;
+		position-anchor: --carousel;
+		margin: 1rem;
+		background: none;
+		color: var(--font-color2);
+		border: 0;
+	}
+
+	&::scroll-button(left) {
+		content: '\27A4';
+		transform: rotate(180deg) scale(3);
+		position-area: center left;
+
+	}
+
+	&::scroll-button(right) {
+		content: '\27A4';
+		position-area: center right;
+		transform: scale(3);
+	}
+
+
+}
+
+.carousel::scroll-button(right):hover {
+	cursor: pointer;
+	transform: scale(4);
+}
+
+.carousel::scroll-button(left):hover {
+	cursor: pointer;
+	transform: rotate(180deg) scale(4);
+}
+
+@keyframes zoom-in {
+
+	from {
+		transform: scale(0.1);
+	}
+
+	to {
+		transform: scale(1.0);
+	}
+
+}
+
+.video {
+	border: 3px solid silver;
+
 }
