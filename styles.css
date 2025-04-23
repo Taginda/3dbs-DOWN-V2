@@ -184,7 +184,8 @@ section {
 	animation-timeline: scroll();
 	animation-range: 5% 50%;
 	text-shadow: 10px 5px 5px black;
-	padding-top: 100px
+	padding-top: 100px;
+	line-height: 1.5;
 }
 
 p>a>span:hover {
