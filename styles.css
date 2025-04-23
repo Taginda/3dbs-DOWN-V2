@@ -335,5 +335,5 @@ p>a {
 
 .video {
 	border: 3px solid silver;
-
+	line-height: 0;
 }
