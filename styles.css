@@ -32,7 +32,7 @@ header {
 	position: fixed;
 	z-index: 50;
 	width: 100vw;
-	background-color: #000000
+	background-color: #000000;
 }
 
 
@@ -87,6 +87,7 @@ section {
 	position: relative;
 	top: -170px;
 	z-index: 20;
+	width: 100vw;
 }
 
 .banner-text {
@@ -221,8 +222,8 @@ p>a {
 	display: block;
 	margin: auto;
 	width: 100%;
-	padding-left: 20vw;
 	padding-top: 10vh;
+	padding-left: 30vw;
 	animation: slide-in-events;
 	animation-timeline: scroll();
 	animation-range: 20% 65%
@@ -337,4 +338,186 @@ p>a {
 .video {
 	border: 3px solid silver;
 	line-height: 0;
+
+
+}
+
+/* MEDIA CALLS*/
+
+@media (max-width: 480px) {
+
+	header {
+		height: 30vw;
+	}
+
+	.logo1 {
+		height: 100px;
+		width: 100px;
+	}
+
+	nav>ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		list-style-type: none;
+		font-size: 20px;
+		width: 25vw;
+		padding-right: 2vw;
+		text-shadow: var(--font-color2) 2px 0 10px;
+	}
+
+	.video-wrap {
+		height: 50px;
+		background: none;
+		padding-top: 80vw;
+
+
+	}
+
+	.video-banner {
+		position: relative;
+		z-index: 20;
+	}
+
+	.banner-text {
+		position: relative;
+		margin: auto;
+		z-index: 30;
+		bottom: 35vw;
+		left: 2vw;
+		text-align: center;
+	}
+
+	.logo2 {
+		height: 70px;
+		width: 70px;
+		opacity: 0;
+		animation: opacityOn 0.1s 1.5s linear 1 forwards;
+	}
+
+
+	.title2 {
+		position: relative;
+		font-size: 20px;
+		color: var(--font-color1);
+		bottom: 20px;
+		opacity: 0;
+		animation: opacityOn 0.1s 3.0s linear 1 forwards;
+		text-shadow: var(--font-color2) 2px 0 10px;
+	}
+
+	.band-image {
+		background: url("Resources/Band01.jpg");
+		background-attachment: fixed;
+		background-size: 100vw;
+		width: 100vw;
+		height: 50vw;
+		margin: 0;
+
+	}
+
+	.album-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		font-size: 20px;
+		/*padding-top: 250px;*/
+		height: 40vh;
+		width: 100%;
+
+
+	}
+
+	.album-info img {
+		height: 190px;
+		width: 199px;
+		animation: slide-in-image;
+		box-shadow: 10px 5px 5px black;
+		animation-timeline: scroll();
+		animation-range: 5% 50%
+	}
+
+	.album-info>p {
+		width: 90vw;
+		font-size: 18px;
+		animation: slide-in-text;
+		animation-timeline: scroll();
+		animation-range: 5% 50%;
+		text-shadow: 10px 5px 5px black;
+		padding-top: 10px;
+		line-height: 1.5;
+	}
+
+
+	@keyframes slide-in-image {
+		from {
+			transform: translateX(-400%);
+		}
+
+		to {
+			transform: translateX(0%);
+		}
+	}
+
+	@keyframes slide-in-text {
+		from {
+			transform: translateX(400%);
+		}
+
+		to {
+			transform: translateX(0%);
+		}
+	}
+
+	.band-image2 {
+
+		background-image: url("Resources/Band02.webp");
+		background-attachment: fixed;
+		background-size: 100vw;
+		margin: 0;
+		height: 50vh;
+		width: 100vw;
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+
+	#events {
+		height: 130vh;
+	}
+
+	.events {
+		display: block;
+		margin: auto;
+		width: 100vw;
+		margin-top: -200px;
+		animation: slide-in-events;
+		animation-timeline: scroll();
+		animation-range: 20% 65%;
+		animation-fill-mode: forwards;
+		padding-left: 0vw;
+	}
+
+	@keyframes slide-in-events {
+		from {
+			transform: translateX(-500%) scale(0.5);
+		}
+
+		to {
+			transform: translateX(0%) scale(0.5);
+		}
+	}
+
+	.band-image3 {
+		background-image: url("Resources/Band03.webp");
+		background-attachment: fixed;
+		background-size: 100vw;
+		margin: 0;
+		height: 50vh;
+		width: 100vw;
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+
+
 }
