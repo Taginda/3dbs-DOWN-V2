@@ -369,6 +369,10 @@ p>a {
 		text-shadow: var(--font-color2) 2px 0 10px;
 	}
 
+	#home {
+		height: 50vh;
+		
+
 	.video-wrap {
 		height: 45vw;
 		width: 100vw;
