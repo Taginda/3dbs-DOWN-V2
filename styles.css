@@ -208,7 +208,7 @@ p>a {
 
 .band-image2 {
 
-	background-image: url("Resources/Band02.webp");
+	background-image: url("Resources/band04.webp");
 	background-attachment: fixed;
 	background-size: 100vw;
 	margin: 0;
@@ -254,7 +254,7 @@ p>a {
 	display: block;
 	margin: auto;
 	width: 56.7vw;
-	height: 78.5vh;
+	height: 50vw;
 	padding-top: 8rem;
 	overflow-x: visible;
 	transform: scale(0.1);
@@ -472,7 +472,7 @@ p>a {
 
 	.band-image2 {
 
-		background-image: url("Resources/Band02.webp");
+		background-image: url("Resources/band04.webp");
 		background-attachment: fixed;
 		background-size: 100vw;
 		margin: 0;
