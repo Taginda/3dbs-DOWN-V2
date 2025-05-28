@@ -77,25 +77,28 @@ section {
 	height: 100vh;
 }
 
+#home {
+	padding-top: 140px;
+}
+
 .video-wrap {
-	height: 800px;
+	height: 35vw;
+	width: 100vw;
 	background: none;
-	overflow: hidden
+	overflow: hidden;
 }
 
 .video-banner {
 	position: relative;
-	top: -170px;
-	z-index: 20;
+	bottom: 30vw;
+	z-index: 1;
 	width: 100vw;
 }
 
 .banner-text {
-	position: absolute;
-	margin: auto;
-	z-index: 30;
-	bottom: 140px;
-	left: 800px;
+	position: relative;
+	top: 15vw;
+	z-index: 2;
 	text-align: center;
 }
 
@@ -367,25 +370,17 @@ p>a {
 	}
 
 	.video-wrap {
-		height: 50px;
+		height: 45vw;
+		width: 100vw;
 		background: none;
-		padding-top: 80vw;
-
-
+		overflow: hidden;
 	}
 
 	.video-banner {
 		position: relative;
-		z-index: 20;
-	}
-
-	.banner-text {
-		position: relative;
-		margin: auto;
-		z-index: 30;
-		bottom: 35vw;
-		left: 2vw;
-		text-align: center;
+		bottom: 40vw;
+		z-index: 1;
+		width: 100vw;
 	}
 
 	.logo2 {
