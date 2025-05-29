@@ -258,7 +258,7 @@ p>a {
 	left: 20vw;
 	width: 56.5vw;
 	height: 48vw;
-	padding-top: 8rem;
+	padding-top: 10rem;
 	overflow-x: visible;
 	transform: scale(0.1);
 	animation: zoom-in;
@@ -340,9 +340,21 @@ p>a {
 
 .video {
 	border: 3px solid silver;
-	line-height: 0;
+	height: 0;
+	position: relative;
+	padding-bottom: 56%;
 
 
+}
+
+.container iframe,
+.container object,
+.container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /* MEDIA CALLS*/
@@ -517,11 +529,6 @@ p>a {
 		background-position: left;
 		background-repeat: no-repeat;
 	}
-
-	.container {
-		transform: scale(0.3);
-	}
-
 
 
 }
