@@ -158,8 +158,8 @@ section {
 	width: 509px;
 	animation: slide-in-image;
 	box-shadow: 10px 5px 5px black;
-	animation-timeline: scroll();
-	animation-range: 5% 50%
+	/*animation-timeline: scroll();
+	animation-range: 5% 50%*/
 }
 
 /* @keyframes slide-in-image {
@@ -195,8 +195,8 @@ section {
 	animation-timeline: scroll();
 	animation-range: 5% 50%;
 	text-shadow: 10px 5px 5px black;
-	padding-top: 100px;
-	line-height: 1.5;
+	/*padding-top: 100px;
+	line-height: 1.5;*/
 }
 
 p>a>span:hover {
@@ -236,9 +236,9 @@ p>a {
 	width: 100%;
 	padding-top: 10vh;
 	padding-left: 30vw;
-	animation: slide-in-events;
+	/*animation: slide-in-events;
 	animation-timeline: scroll();
-	animation-range: 20% 65%
+	animation-range: 20% 65%*/
 }
 
 @keyframes slide-in-events {
