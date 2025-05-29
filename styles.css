@@ -254,10 +254,10 @@ p>a {
 }
 
 .container {
-	display: block;
-	margin: auto;
-	width: 56.7vw;
-	height: 50vw;
+	position: relative;
+	left: 20vw;
+	width: 56.5vw;
+	height: 48vw;
 	padding-top: 8rem;
 	overflow-x: visible;
 	transform: scale(0.1);
@@ -371,7 +371,7 @@ p>a {
 
 	#home {
 		height: 50vh;
-		
+	}
 
 	.video-wrap {
 		height: 45vw;
@@ -517,6 +517,11 @@ p>a {
 		background-position: left;
 		background-repeat: no-repeat;
 	}
+
+	.container {
+		transform: scale(0.3);
+	}
+
 
 
 }
