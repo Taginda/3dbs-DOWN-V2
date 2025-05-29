@@ -162,7 +162,7 @@ section {
 	animation-range: 5% 50%
 }
 
-@keyframes slide-in-image {
+/* @keyframes slide-in-image {
 	from {
 		transform: translateX(-500%);
 	}
@@ -185,6 +185,8 @@ section {
 
 	overflow-x: hidden;
 }
+
+*/
 
 .album-info>p {
 	width: 400px;
