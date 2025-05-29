@@ -463,9 +463,9 @@ p>a {
 	.album-info>p {
 		width: 90vw;
 		font-size: 18px;
-		animation: slide-in-text;
+		/*animation: slide-in-text;
 		animation-timeline: scroll();
-		animation-range: 5% 50%;
+		animation-range: 5% 50%;*/
 		text-shadow: 10px 5px 5px black;
 		padding-top: 10px;
 		line-height: 1.5;
@@ -513,11 +513,11 @@ p>a {
 		margin: auto;
 		width: 100vw;
 		margin-top: -200px;
-		animation: slide-in-events;
+		/*animation: slide-in-events;
 		animation-timeline: scroll();
 		animation-range: 20% 65%;
 		animation-fill-mode: forwards;
-		padding-left: 0vw;
+		padding-left: 0vw;*/
 	}
 
 	@keyframes slide-in-events {
