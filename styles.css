@@ -206,8 +206,10 @@ p>a {
 .band-image {
 	background: url("Resources/Band01.jpg");
 	background-attachment: fixed;
+	background-position: center;
 	margin: 0;
 	height: 50vh;
+	width: 100vw;
 }
 
 .band-image2 {
