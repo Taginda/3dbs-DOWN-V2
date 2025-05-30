@@ -420,43 +420,19 @@ p>a {
 	.album-info img {
 		height: 190px;
 		width: 199px;
-		animation: slide-in-image;
 		box-shadow: 10px 5px 5px black;
-		animation-timeline: scroll();
-		animation-range: 5% 50%
+		
 	}
 
 	.album-info>p {
 		width: 90vw;
 		font-size: 18px;
-		/*animation: slide-in-text;
-		animation-timeline: scroll();
-		animation-range: 5% 50%;*/
 		text-shadow: 10px 5px 5px black;
 		padding-top: 10px;
 		line-height: 1.5;
 	}
 
 
-	@keyframes slide-in-image {
-		from {
-			transform: translateX(-400%);
-		}
-
-		to {
-			transform: translateX(0%);
-		}
-	}
-
-	@keyframes slide-in-text {
-		from {
-			transform: translateX(400%);
-		}
-
-		to {
-			transform: translateX(0%);
-		}
-	}
 
 	.band-image2 {
 
@@ -479,22 +455,7 @@ p>a {
 		margin: auto;
 		width: 100vw;
 		margin-top: -200px;
-		/*animation: slide-in-events;
-		animation-timeline: scroll();
-		animation-range: 20% 65%;
-		animation-fill-mode: forwards;
-		padding-left: 0vw;*/
-	}
-
-	@keyframes slide-in-events {
-		from {
-			transform: translateX(-500%) scale(0.5);
-		}
-
-		to {
-			transform: translateX(0%) scale(0.5);
-		}
-	}
+		
 
 	.band-image3 {
 		background-image: url("Resources/Band03.webp");
