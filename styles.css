@@ -71,6 +71,8 @@ li>a {
 main {
 	margin: 0;
 	background-color: #000000;
+	width: 100vw;
+
 }
 
 section {
