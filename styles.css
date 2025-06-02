@@ -81,7 +81,7 @@ section {
 
 #home {
 	padding-top: 140px;
-	padding-bottom: 20vh
+	padding-bottom: 50vh
 }
 
 .video-wrap {
@@ -431,7 +431,7 @@ p>a {
 
 	.band-image {
 		background: url("Resources/Band01.jpg");
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-size: 100vw;
 		width: 100vw;
 		height: 50vw;
@@ -500,7 +500,7 @@ p>a {
 	.band-image2 {
 
 		background-image: url("Resources/band04.webp");
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-size: 100vw;
 		margin: 0;
 		height: 50vh;
@@ -539,7 +539,7 @@ p>a {
 
 	.band-image3 {
 		background-image: url("Resources/Band03.webp");
-		background-attachment: fixed;
+		background-attachment: scroll;
 		background-size: 100vw;
 		margin: 0;
 		height: 50vh;
