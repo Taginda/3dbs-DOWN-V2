@@ -28,8 +28,10 @@ body {
 /* Header & NAV */
 
 header {
-	display: block;
 	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 50;
 	width: 100vw;
 	background-color: #000000;
@@ -135,11 +137,9 @@ section {
 	100% {
 		opacity: 1
 	}
-
 }
 
 #about {
-	background: #b8aeae;
 	background: radial-gradient(circle, rgba(184, 174, 174, 1) 0%, rgba(5, 5, 5, 1) 57%);
 }
 
@@ -162,7 +162,8 @@ section {
 	animation: slide-in-image;
 	box-shadow: 10px 5px 5px black;
 	animation-timeline: scroll();
-	animation-range: 5% 50%
+	animation-range: 5% 45%;
+	animation-fill-mode: forwards;
 }
 
 @keyframes slide-in-image {
@@ -171,10 +172,8 @@ section {
 	}
 
 	to {
-		transform: translateX(50%);
+		transform: translateX(20%);
 	}
-
-	overflow-x: hidden;
 }
 
 @keyframes slide-in-text {
@@ -183,10 +182,9 @@ section {
 	}
 
 	to {
-		transform: translateX(-50%);
+		transform: translateX(-20%);
 	}
 
-	overflow-x: hidden;
 }
 
 .album-info>p {
@@ -194,7 +192,8 @@ section {
 	font-size: 30px;
 	animation: slide-in-text;
 	animation-timeline: scroll();
-	animation-range: 5% 50%;
+	animation-range: 5% 45%;
+	animation-fill-mode: forwards;
 	text-shadow: 10px 5px 5px black;
 	padding-top: 100px;
 	line-height: 1.5;
@@ -251,7 +250,7 @@ p>a {
 		transform: translateX(0%);
 	}
 
-	overflow-x: hidden;
+
 }
 
 .band-image3 {
@@ -373,9 +372,15 @@ p>a {
 
 @media (max-width: 480px) {
 
-	header {
-		height: 30vw;
+	body {
+		overflow-x: visible;
 	}
+
+	header {
+		position: sticky;
+		top: 0;
+	}
+
 
 	.logo1 {
 		height: 100px;
@@ -394,11 +399,11 @@ p>a {
 	}
 
 	#home {
-		height: 50vh;
+		height: 10vh;
 	}
 
 	.video-wrap {
-		height: 45vw;
+		height: 100vw;
 		width: 100vw;
 		background: none;
 		overflow: hidden;
@@ -408,7 +413,8 @@ p>a {
 		position: relative;
 		bottom: 40vw;
 		z-index: 1;
-		width: 100vw;
+		width: 140vw;
+		margin-left: -2vw;
 	}
 
 	.logo2 {
@@ -416,6 +422,13 @@ p>a {
 		width: 70px;
 		opacity: 0;
 		animation: opacityOn 0.1s 1.5s linear 1 forwards;
+	}
+
+	.banner-text {
+		position: relative;
+		top: 35vw;
+		z-index: 2;
+		text-align: center;
 	}
 
 
@@ -458,7 +471,8 @@ p>a {
 		animation: slide-in-image;
 		box-shadow: 10px 5px 5px black;
 		animation-timeline: scroll();
-		animation-range: 5% 50%
+		animation-range: 0% 50%;
+		animation-fill-mode: forwards;
 	}
 
 	.album-info>p {
@@ -466,10 +480,11 @@ p>a {
 		font-size: 18px;
 		animation: slide-in-text;
 		animation-timeline: scroll();
-		animation-range: 5% 50%;
+		animation-range: 0% 50%;
 		text-shadow: 10px 5px 5px black;
 		padding-top: 10px;
 		line-height: 1.5;
+		animation-fill-mode: forwards;
 	}
 
 
@@ -482,7 +497,7 @@ p>a {
 			transform: translateX(0%);
 		}
 
-		overflow-x: hidden;
+
 	}
 
 	@keyframes slide-in-text {
@@ -494,7 +509,7 @@ p>a {
 			transform: translateX(0%);
 		}
 
-		overflow-x: hidden;
+
 	}
 
 	.band-image2 {
@@ -534,7 +549,7 @@ p>a {
 			transform: translateX(0%) scale(0.5);
 		}
 
-		overflow-x: hidden;
+
 	}
 
 	.band-image3 {
