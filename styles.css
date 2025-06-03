@@ -378,7 +378,7 @@ p>a {
 	}
 
 	header {
-		position: auto;
+		position: static;
 		top: 0;
 	}
 
