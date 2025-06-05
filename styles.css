@@ -23,13 +23,13 @@ html {
 
 body {
 	margin: 0;
-	overflow-x: hidden;
+
 }
 
 /* Header & NAV */
 
 header {
-	position: fixed;
+
 	top: 0;
 	left: 0;
 	right: 0;
@@ -371,15 +371,14 @@ p>a {
 
 /* MEDIA CALLS*/
 
+
+
+
+
 @media (max-width: 480px) {
 
-	body {
-		overflow-x: visible;
-	}
-
 	header {
-		position: static;
-		top: 0;
+		position: sticky;
 	}
 
 
@@ -415,7 +414,7 @@ p>a {
 		bottom: 40vw;
 		z-index: 1;
 		width: 140vw;
-		margin-left: -4vw;
+		margin-left: -25vw;
 	}
 
 	.logo2 {
@@ -565,4 +564,16 @@ p>a {
 	}
 
 
+}
+
+@media (max-width: 4000px) and (min-width: 1201px) {
+
+	header {
+		position: fixed;
+	}
+
+	body {
+		margin: 0;
+		overflow-x: hidden;
+	}
 }
