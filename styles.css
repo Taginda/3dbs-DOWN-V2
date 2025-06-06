@@ -16,10 +16,6 @@
 	src: url('PoplarStd.otf');
 }
 
-html,
-body {
-	overflow-x: hidden;
-}
 
 html {
 	scroll-behavior: smooth;
@@ -155,7 +151,8 @@ section {
 	font-size: 28px;
 	padding-top: 250px;
 	height: 80vh;
-	width: 100%;
+	width: 70%;
+	margin-left: 15%;
 
 }
 
@@ -165,7 +162,7 @@ section {
 	animation: slide-in-image;
 	box-shadow: 10px 5px 5px black;
 	animation-timeline: scroll();
-	animation-range: 5% 42%;
+	animation-range: 10% 42%;
 	animation-fill-mode: forwards;
 }
 
@@ -177,7 +174,7 @@ section {
 	line-height: 1.5;
 	animation: slide-in-text;
 	animation-timeline: scroll();
-	animation-range: 5% 42%;
+	animation-range: 10% 42%;
 	animation-fill-mode: forwards;
 
 
@@ -206,7 +203,7 @@ section {
 
 @keyframes slide-in-image-mobile {
 	from {
-		transform: translateX(-150%);
+		transform: translateX(-80%);
 	}
 
 	to {
@@ -216,7 +213,7 @@ section {
 
 @keyframes slide-in-text-mobile {
 	from {
-		transform: translateX(150%);
+		transform: translateX(80%);
 	}
 
 	to {
@@ -265,7 +262,7 @@ p>a {
 	padding-left: 30vw;
 	animation: slide-in-events;
 	animation-timeline: scroll();
-	animation-range: 30% 65%
+	animation-range: 35% 75%
 }
 
 @keyframes slide-in-events {
@@ -417,9 +414,9 @@ p>a {
 @media (max-width: 480px) {
 
 	html,
-body {
-	overflow-x: clip;
-}
+	body {
+		overflow-x: clip;
+	}
 
 	header {
 		position: sticky;
