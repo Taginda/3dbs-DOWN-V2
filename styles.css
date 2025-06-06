@@ -548,7 +548,7 @@ p>a {
 		display: block;
 		margin: auto;
 		width: 100%;
-		margin-top: 5%;
+		margin-top: 2%;
 		animation: slide-in-events-mobile;
 		animation-timeline: scroll();
 		animation-range: 30% 65%;
