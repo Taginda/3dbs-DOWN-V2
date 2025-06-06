@@ -277,11 +277,11 @@ p>a {
 
 @keyframes slide-in-events-mobile {
 	from {
-		transform: translateX(-90%) scale(0.7);
+		transform: translateX(-120%) scale(0.9);
 	}
 
 	to {
-		transform: translateX(0%) scale(0.7);
+		transform: translateX(0%) scale(0.9);
 	}
 
 }
