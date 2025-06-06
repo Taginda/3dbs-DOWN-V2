@@ -455,7 +455,8 @@ p>a {
 		position: relative;
 		bottom: 40vw;
 		z-index: 1;
-		width: 100%;
+		width: 140%;
+		margin-left: -20%;
 	}
 
 	.logo2 {
