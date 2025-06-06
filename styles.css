@@ -16,14 +16,15 @@
 	src: url('PoplarStd.otf');
 }
 
+
+
 html {
 	scroll-behavior: smooth;
-	overscroll-behavior: none;
 }
 
 body {
 	margin: 0;
-
+	overflow-x: hidden;
 }
 
 /* Header & NAV */
@@ -34,7 +35,7 @@ header {
 	left: 0;
 	right: 0;
 	z-index: 50;
-	width: 100vw;
+	width: 100%;
 	background-color: #000000;
 }
 
@@ -153,8 +154,6 @@ section {
 	height: 80vh;
 	width: 100%;
 
-
-
 }
 
 .album-info img {
@@ -167,38 +166,60 @@ section {
 	animation-fill-mode: forwards;
 }
 
-@keyframes slide-in-image {
-	from {
-		transform: translateX(-500%);
-	}
-
-	to {
-		transform: translateX(20%);
-	}
-}
-
-@keyframes slide-in-text {
-	from {
-		transform: translateX(500%);
-	}
-
-	to {
-		transform: translateX(-20%);
-	}
-
-}
-
 .album-info>p {
 	width: 400px;
 	font-size: 30px;
 	animation: slide-in-text;
 	animation-timeline: scroll();
 	animation-range: 5% 45%;
-	animation-fill-mode: forwards;
 	text-shadow: 10px 5px 5px black;
 	padding-top: 100px;
 	line-height: 1.5;
+
 }
+
+@keyframes slide-in-image {
+	from {
+		transform: translateX(-100%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slide-in-text {
+	from {
+		transform: translateX(100%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+
+}
+
+@keyframes slide-in-image-mobile {
+	from {
+		transform: translateX(-90%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slide-in-text-mobile {
+	from {
+		transform: translateX(90%);
+	}
+
+	to {
+		transform: translateX(0%);
+	}
+
+}
+
 
 p>a>span:hover {
 	color: var(--font-color1);
@@ -239,18 +260,27 @@ p>a {
 	padding-left: 30vw;
 	animation: slide-in-events;
 	animation-timeline: scroll();
-	animation-range: 20% 65%
+	animation-range: 30% 65%
 }
 
 @keyframes slide-in-events {
 	from {
-		transform: translateX(-500%);
+		transform: translateX(-100%);
 	}
 
 	to {
 		transform: translateX(0%);
 	}
+}
 
+@keyframes slide-in-events-mobile {
+	from {
+		transform: translateX(-90%) scale(0.5);
+	}
+
+	to {
+		transform: translateX(0%) scale(0.5);
+	}
 
 }
 
@@ -369,6 +399,10 @@ p>a {
 	height: 100%;
 }
 
+
+
+
+
 /* MEDIA CALLS*/
 
 
@@ -379,6 +413,7 @@ p>a {
 
 	header {
 		position: sticky;
+		top: 0;
 	}
 
 
@@ -413,8 +448,7 @@ p>a {
 		position: relative;
 		bottom: 40vw;
 		z-index: 1;
-		width: 140vw;
-		margin-left: -25vw;
+		width: 100%;
 	}
 
 	.logo2 {
@@ -461,56 +495,32 @@ p>a {
 		/*padding-top: 250px;*/
 		height: 40vh;
 		width: 100%;
-
-
 	}
+
 
 	.album-info img {
 		height: 190px;
 		width: 199px;
-		animation: slide-in-image;
 		box-shadow: 10px 5px 5px black;
+		animation: slide-in-image-mobile;
 		animation-timeline: scroll();
-		animation-range: 0% 50%;
-		animation-fill-mode: forwards;
+		animation-range: 5% 45%;
+
 	}
 
 	.album-info>p {
 		width: 90vw;
 		font-size: 18px;
-		animation: slide-in-text;
-		animation-timeline: scroll();
-		animation-range: 0% 50%;
 		text-shadow: 10px 5px 5px black;
 		padding-top: 10px;
 		line-height: 1.5;
-		animation-fill-mode: forwards;
-	}
-
-
-	@keyframes slide-in-image {
-		from {
-			transform: translateX(-400%);
-		}
-
-		to {
-			transform: translateX(0%);
-		}
-
+		padding-left: 5vw;
+		animation: slide-in-text-mobile;
+		animation-timeline: scroll();
+		animation-range: 5% 45%;
 
 	}
 
-	@keyframes slide-in-text {
-		from {
-			transform: translateX(400%);
-		}
-
-		to {
-			transform: translateX(0%);
-		}
-
-
-	}
 
 	.band-image2 {
 
@@ -531,26 +541,16 @@ p>a {
 	.events {
 		display: block;
 		margin: auto;
-		width: 100vw;
+		width: 100%;
 		margin-top: -200px;
-		animation: slide-in-events;
+		animation: slide-in-events-mobile;
 		animation-timeline: scroll();
-		animation-range: 20% 65%;
+		animation-range: 30% 65%;
 		animation-fill-mode: forwards;
 		padding-left: 0vw;
 	}
 
-	@keyframes slide-in-events {
-		from {
-			transform: translateX(-500%) scale(0.5);
-		}
 
-		to {
-			transform: translateX(0%) scale(0.5);
-		}
-
-
-	}
 
 	.band-image3 {
 		background-image: url("Resources/Band03.webp");
@@ -576,4 +576,7 @@ p>a {
 		margin: 0;
 		overflow-x: hidden;
 	}
+
+
+
 }
