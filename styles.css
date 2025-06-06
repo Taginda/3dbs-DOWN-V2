@@ -152,7 +152,8 @@ section {
 	font-size: 28px;
 	padding-top: 250px;
 	height: 80vh;
-	width: 100%;
+	width: 70%;
+	margin-left: 15%;
 
 }
 
@@ -162,25 +163,27 @@ section {
 	animation: slide-in-image;
 	box-shadow: 10px 5px 5px black;
 	animation-timeline: scroll();
-	animation-range: 5% 45%;
+	animation-range: 5% 42%;
 	animation-fill-mode: forwards;
 }
 
 .album-info>p {
 	width: 400px;
 	font-size: 30px;
-	animation: slide-in-text;
-	animation-timeline: scroll();
-	animation-range: 5% 45%;
 	text-shadow: 10px 5px 5px black;
 	padding-top: 100px;
 	line-height: 1.5;
+	animation: slide-in-text;
+	animation-timeline: scroll();
+	animation-range: 5% 42%;
+	animation-fill-mode: forwards;
+
 
 }
 
 @keyframes slide-in-image {
 	from {
-		transform: translateX(-100%);
+		transform: translateX(-500%);
 	}
 
 	to {
@@ -190,7 +193,7 @@ section {
 
 @keyframes slide-in-text {
 	from {
-		transform: translateX(100%);
+		transform: translateX(500%);
 	}
 
 	to {
@@ -201,7 +204,7 @@ section {
 
 @keyframes slide-in-image-mobile {
 	from {
-		transform: translateX(-90%);
+		transform: translateX(-80%);
 	}
 
 	to {
@@ -211,7 +214,7 @@ section {
 
 @keyframes slide-in-text-mobile {
 	from {
-		transform: translateX(90%);
+		transform: translateX(80%);
 	}
 
 	to {
@@ -495,6 +498,7 @@ p>a {
 		/*padding-top: 250px;*/
 		height: 40vh;
 		width: 100%;
+		margin-left: 0
 	}
 
 
@@ -504,7 +508,7 @@ p>a {
 		box-shadow: 10px 5px 5px black;
 		animation: slide-in-image-mobile;
 		animation-timeline: scroll();
-		animation-range: 5% 45%;
+		animation-range: 0% 35%;
 
 	}
 
@@ -517,7 +521,7 @@ p>a {
 		padding-left: 5vw;
 		animation: slide-in-text-mobile;
 		animation-timeline: scroll();
-		animation-range: 5% 45%;
+		animation-range: 0% 35%;
 
 	}
 
