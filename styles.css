@@ -203,7 +203,7 @@ section {
 
 @keyframes slide-in-image-mobile {
 	from {
-		transform: translateX(-80%);
+		transform: translateX(-150%);
 	}
 
 	to {
@@ -213,7 +213,7 @@ section {
 
 @keyframes slide-in-text-mobile {
 	from {
-		transform: translateX(80%);
+		transform: translateX(150%);
 	}
 
 	to {
@@ -512,7 +512,7 @@ p>a {
 		box-shadow: 10px 5px 5px black;
 		animation: slide-in-image-mobile;
 		animation-timeline: scroll();
-		animation-range: 0% 35%;
+		animation-range: 5% 35%;
 
 	}
 
@@ -525,7 +525,7 @@ p>a {
 		padding-left: 5vw;
 		animation: slide-in-text-mobile;
 		animation-timeline: scroll();
-		animation-range: 0% 35%;
+		animation-range: 5% 35%;
 
 	}
 
