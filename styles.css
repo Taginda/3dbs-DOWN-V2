@@ -84,7 +84,7 @@ section {
 
 #home {
 	padding-top: 140px;
-	padding-bottom: 50vh
+
 }
 
 .video-wrap {
@@ -440,9 +440,7 @@ p>a {
 		text-shadow: var(--font-color2) 2px 0 10px;
 	}
 
-	#home {
-		height: 10vh;
-	}
+
 
 	.video-wrap {
 		height: 100vw;
@@ -544,13 +542,13 @@ p>a {
 		background-repeat: no-repeat;
 	}
 
-	
+
 
 	.events {
 		display: block;
 		margin: auto;
 		width: 100%;
-		margin-top: -200px;
+		margin-top: 20%;
 		animation: slide-in-events-mobile;
 		animation-timeline: scroll();
 		animation-range: 30% 65%;
