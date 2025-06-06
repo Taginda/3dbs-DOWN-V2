@@ -277,11 +277,11 @@ p>a {
 
 @keyframes slide-in-events-mobile {
 	from {
-		transform: translateX(-90%) scale(0.5);
+		transform: translateX(-90%) scale(0.7);
 	}
 
 	to {
-		transform: translateX(0%) scale(0.5);
+		transform: translateX(0%) scale(0.7);
 	}
 
 }
@@ -449,11 +449,12 @@ p>a {
 		width: 100%;
 		background: none;
 		overflow: hidden;
+		margin-top: -30%;
+
 	}
 
 	.video-banner {
 		position: relative;
-		bottom: 40vw;
 		z-index: 1;
 		width: 140%;
 		margin-left: -20%;
