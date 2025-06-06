@@ -154,6 +154,7 @@ section {
 	height: 80vh;
 	width: 70%;
 	margin-left: 15%;
+	overflow-x: hidden;
 
 }
 
