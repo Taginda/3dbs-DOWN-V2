@@ -506,7 +506,7 @@ p>a {
 		border-top: 50px;
 		clip-path: polygon(0 20%, 100% 0, 100% 85%, 0 100%);
 	}
-}
+
 
 .album-info {
 	display: flex;
