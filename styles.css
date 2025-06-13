@@ -595,7 +595,71 @@ p>a {
 
 }
 
-@media (max-width: 4000px) and (min-width: 1201px) {
+@media (max-width: 1600px) and (min-width: 1441px) {
+
+	header {
+		position: fixed;
+	}
+
+	body {
+		margin: 0;
+		overflow-x: hidden;
+	}
+
+	nav>ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		list-style-type: none;
+		font-size: 30px;
+		width: 30vw;
+		padding-right: 2vw;
+		text-shadow: var(--font-color2) 2px 0 10px;
+
+	}
+
+	.album-info img {
+		height: 400px;
+		width: 409px;
+		animation: slide-in-image;
+		box-shadow: 10px 5px 5px black;
+		animation-timeline: scroll();
+		animation-range: 10% 42%;
+		animation-fill-mode: forwards;
+	}
+
+	.album-info>p {
+		width: 400px;
+		font-size: 25px;
+		text-shadow: 10px 5px 5px black;
+		padding-top: 80px;
+		line-height: 1.5;
+		animation: slide-in-text;
+		animation-timeline: scroll();
+		animation-range: 10% 42%;
+		animation-fill-mode: forwards;
+
+
+	}
+
+	.events {
+		display: block;
+		margin: auto;
+		width: 100%;
+		padding-top: 10vh;
+		padding-left: 25vw;
+		animation: slide-in-events;
+		animation-timeline: scroll();
+		animation-range: 35% 73%
+	}
+
+
+
+
+
+}
+
+@media (max-width: 4000px) and (min-width: 1441px) {
 
 	header {
 		position: fixed;
