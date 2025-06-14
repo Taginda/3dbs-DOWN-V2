@@ -595,7 +595,92 @@ p>a {
 
 }
 
-@media (max-width: 1600px) and (min-width: 1441px) {
+@media (max-width: 1400px) and (min-width: 1080px) {
+
+	header {
+		position: fixed;
+	}
+
+	body {
+		margin: 0;
+		overflow-x: hidden;
+	}
+
+	nav>ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		list-style-type: none;
+		font-size: 25px;
+		width: 35vw;
+		padding-right: 2vw;
+		text-shadow: var(--font-color2) 2px 0 10px;
+
+	}
+
+	.banner-text {
+		position: relative;
+		top: 15vw;
+		z-index: 2;
+		text-align: center;
+	}
+
+	.logo2 {
+		height: 130px;
+		width: 130px;
+		opacity: 0;
+		animation: opacityOn 0.1s 1.5s linear 1 forwards;
+	}
+
+	.title2 {
+		position: relative;
+		font-size: 40px;
+		color: var(--font-color1);
+		bottom: 20px;
+		opacity: 0;
+		animation: opacityOn 0.1s 3.0s linear 1 forwards;
+		text-shadow: var(--font-color2) 2px 0 10px;
+	}
+
+
+	.album-info img {
+		height: 400px;
+		width: 409px;
+		animation: slide-in-image;
+		box-shadow: 10px 5px 5px black;
+		animation-timeline: scroll();
+		animation-range: 10% 42%;
+		animation-fill-mode: forwards;
+	}
+
+	.album-info>p {
+		width: 400px;
+		font-size: 25px;
+		text-shadow: 10px 5px 5px black;
+		padding-top: 80px;
+		line-height: 1.5;
+		animation: slide-in-text;
+		animation-timeline: scroll();
+		animation-range: 10% 42%;
+		animation-fill-mode: forwards;
+
+
+	}
+
+	.events {
+		display: block;
+		margin: auto;
+		width: 100%;
+		padding-top: 10vh;
+		padding-left: 25vw;
+		animation: slide-in-events;
+		animation-timeline: scroll();
+		animation-range: 35% 73%
+	}
+}
+
+
+@media (max-width: 1600px) and (min-width: 1401px) {
 
 	header {
 		position: fixed;
