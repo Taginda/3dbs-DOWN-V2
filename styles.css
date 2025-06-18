@@ -341,7 +341,7 @@ p>a {
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		top: 3vw;
+		top: 2vw;
 		grid-auto-flow: column;
 		padding: 1vw;
 		gap: 3vw;
@@ -355,8 +355,8 @@ p>a {
 
 	>li::scroll-marker {
 		content: ' ';
-		width: 1.5vw;
-		height: 1.5vw;
+		width: 1vw;
+		height: 1vw;
 		aspect-ratio: 1/1;
 		border-radius: 100%;
 		border: 1px solid white;
@@ -601,6 +601,72 @@ p>a {
 		animation: zoom-in;
 		animation-timeline: scroll();
 		animation-range: 85% 100%;
+
+	}
+
+	.carousel {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		display: grid;
+		gap: 3rem;
+		grid-auto-flow: column;
+		grid-auto-columns: 100%;
+		gap: 10rem;
+
+		overflow-x: auto;
+
+		scroll-snap-type: x mandatory;
+
+		anchor-name: --carousel;
+
+		overflow-x: hidden;
+
+		scroll-marker-group: after;
+
+		&::scroll-marker-group {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			top: 10vw;
+			grid-auto-flow: column;
+			padding: 1vw;
+			gap: 7vw;
+
+		}
+
+
+		>li {
+			scroll-snap-align: center;
+		}
+
+		>li::scroll-marker {
+			content: ' ';
+			width: 5vw;
+			height: 5vw;
+			aspect-ratio: 1/1;
+			border-radius: 100%;
+			border: 1px solid white;
+		}
+
+		>li {
+			&::scroll-marker:target-current {
+				background: White;
+				border-color: White;
+			}
+		}
+
+		&::scroll-button(*) {
+			position: fixed;
+			position-anchor: --carousel;
+			margin: 1rem;
+			background: none;
+			color: var(--font-color2);
+			border: 0;
+		}
+
 
 	}
 
