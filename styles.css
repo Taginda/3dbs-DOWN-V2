@@ -341,7 +341,7 @@ p>a {
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		bottom: 50px;
+		top: 10px;
 		grid-auto-flow: column;
 		padding: 1rem;
 		gap: 1rem;
