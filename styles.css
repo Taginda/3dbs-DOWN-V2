@@ -204,7 +204,7 @@ section {
 
 @keyframes slide-in-image-mobile {
 	from {
-		transform: translateX(-150%);
+		transform: translateX(-250%);
 	}
 
 	to {
@@ -214,7 +214,7 @@ section {
 
 @keyframes slide-in-text-mobile {
 	from {
-		transform: translateX(150%);
+		transform: translateX(250%);
 	}
 
 	to {
