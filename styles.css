@@ -341,10 +341,10 @@ p>a {
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		top: 10px;
+		top: 3vw;
 		grid-auto-flow: column;
-		padding: 1rem;
-		gap: 1rem;
+		padding: 1vw;
+		gap: 3vw;
 
 	}
 
@@ -355,8 +355,8 @@ p>a {
 
 	>li::scroll-marker {
 		content: ' ';
-		width: 1vw;
-		height: 1vw;
+		width: 1.5vw;
+		height: 1.5vw;
 		aspect-ratio: 1/1;
 		border-radius: 100%;
 		border: 1px solid white;
@@ -592,7 +592,7 @@ p>a {
 
 	.container {
 		position: relative;
-		left: 1vw;
+		left: 0.5vw;
 		width: 98vw;
 		height: 75vw;
 		padding-top: 10rem;
@@ -603,6 +603,7 @@ p>a {
 		animation-range: 85% 100%;
 
 	}
+
 
 
 }
