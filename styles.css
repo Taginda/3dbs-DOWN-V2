@@ -330,12 +330,23 @@ p>a {
 
 	scroll-snap-type: x mandatory;
 
-	scroll-marker-group: after;
-
 	anchor-name: --carousel;
 
-
 	overflow-x: hidden;
+
+	scroll-marker-group: after;
+
+	&::scroll-marker-group {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		bottom: 50px;
+		grid-auto-flow: column;
+		padding: 1rem;
+		gap: 1rem;
+
+	}
 
 
 	>li {
@@ -344,10 +355,18 @@ p>a {
 
 	>li::scroll-marker {
 		content: ' ';
+		width: 1vw;
+		height: 1vw;
+		aspect-ratio: 1/1;
+		border-radius: 100%;
+		border: 1px solid white;
 	}
 
-	>li::scroll-marker:target-current {
-		background: var(--accent);
+	>li {
+		&::scroll-marker:target-current {
+			background: White;
+			border-color: White;
+		}
 	}
 
 	&::scroll-button(*) {
@@ -359,31 +378,10 @@ p>a {
 		border: 0;
 	}
 
-	&::scroll-button(left) {
-		content: '\27A4';
-		transform: rotate(180deg) scale(3);
-		position-area: center left;
-
-	}
-
-	&::scroll-button(right) {
-		content: '\27A4';
-		position-area: center right;
-		transform: scale(3);
-	}
-
 
 }
 
-.carousel::scroll-button(right):hover {
-	cursor: pointer;
-	transform: scale(4);
-}
 
-.carousel::scroll-button(left):hover {
-	cursor: pointer;
-	transform: rotate(180deg) scale(4);
-}
 
 @keyframes zoom-in {
 
@@ -592,6 +590,20 @@ p>a {
 		margin-top: 50%;
 	}
 
+	.container {
+		position: relative;
+		left: 1vw;
+		width: 98vw;
+		height: 75vw;
+		padding-top: 10rem;
+		overflow-x: visible;
+		transform: scale(0.1);
+		animation: zoom-in;
+		animation-timeline: scroll();
+		animation-range: 85% 100%;
+
+	}
+
 
 }
 
@@ -644,8 +656,8 @@ p>a {
 
 
 	.album-info img {
-		height: 400px;
-		width: 409px;
+		height: 300px;
+		width: 309px;
 		animation: slide-in-image;
 		box-shadow: 10px 5px 5px black;
 		animation-timeline: scroll();
@@ -672,10 +684,11 @@ p>a {
 		margin: auto;
 		width: 100%;
 		padding-top: 10vh;
-		padding-left: 25vw;
+		padding-left: 20vw;
 		animation: slide-in-events;
 		animation-timeline: scroll();
-		animation-range: 35% 73%
+		animation-range: 35% 73%;
+		transform: scale(0.6);
 	}
 }
 
