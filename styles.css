@@ -163,7 +163,7 @@ section {
 	animation: slide-in-image;
 	box-shadow: 10px 5px 5px black;
 	animation-timeline: scroll();
-	animation-range: 10% 42%;
+	animation-range: 5% 28%;
 	animation-fill-mode: forwards;
 }
 
@@ -175,7 +175,7 @@ section {
 	line-height: 1.5;
 	animation: slide-in-text;
 	animation-timeline: scroll();
-	animation-range: 10% 42%;
+	animation-range: 5% 28%;
 	animation-fill-mode: forwards;
 
 
@@ -265,7 +265,8 @@ p>a {
 	padding-left: 30vw;
 	animation: slide-in-events;
 	animation-timeline: scroll();
-	animation-range: 35% 75%
+	animation-range: 25% 55%;
+	animation-fill-mode: forwards;
 }
 
 @keyframes slide-in-events {
@@ -311,7 +312,8 @@ p>a {
 	transform: scale(0.1);
 	animation: zoom-in;
 	animation-timeline: scroll();
-	animation-range: 85% 100%;
+	animation-range: 68% 78%;
+	animation-fill-mode: forwards;
 
 }
 
@@ -378,7 +380,6 @@ p>a {
 		border: 0;
 	}
 
-
 }
 
 
@@ -413,6 +414,107 @@ p>a {
 	width: 100%;
 	height: 100%;
 }
+
+.band-image4 {
+	background-image: url("Resources/Matt01.jpg");
+	background-attachment: fixed;
+	background-size: 100vw;
+	margin: 0;
+	height: 50vh;
+	width: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+	clip-path: polygon(0 20%, 100% 0, 100% 85%, 0 100%);
+}
+
+.links {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 15%;
+	padding-left: 20%;
+	width: 60%;
+}
+
+.icon:hover {
+	animation: iconrotate 0.5s ease-in infinite;
+	color: var(--font-color2);
+}
+
+.subscribe {
+	width: 100%;
+	margin: auto;
+	display: block;
+	font-size: 28px;
+	text-align: center;
+	padding-top: 10%;
+}
+
+.subscribe>p {
+	margin: auto;
+	display: block;
+	width: 60%;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	width: 100%;
+
+}
+
+label {
+	font-size: 28px;
+	padding: 10px 0px;
+}
+
+
+
+input {
+	height: 30px;
+	width: 250px;
+	color: var(--font-color1);
+	font-size: 25px;
+	border: 5px solid var(--font-color1);
+	background-color: black;
+	text-align: center;
+	padding-top: 5px;
+	border-radius: 25px;
+
+}
+
+.mailing-list {
+	padding: 10px 0px;
+	/*amends padding between inputs*/
+}
+
+#button3 {
+	margin-top: 15px
+}
+
+
+@keyframes iconrotate {
+	0% {
+		transform: scale(1.5);
+	}
+
+	25% {
+		transform: scale(1.5) rotate(25deg);
+
+	}
+
+	75% {
+		transform: scale(1.5) rotate(-25deg);
+
+	}
+
+	100% {
+		transform: scale(1.5);
+	}
+}
+
+
 
 
 
