@@ -564,6 +564,12 @@ input {
 
 
 
+
+
+
+
+
+
 @media (max-width: 480px) {
 
 	html,
@@ -638,7 +644,7 @@ input {
 
 	.band-image {
 		background: url("Resources/Band01.jpg");
-		background-attachment: scroll;
+		background-attachment: fixed;
 		background-size: 100%;
 		background-position: center 60%;
 		width: 100%;
@@ -690,7 +696,7 @@ input {
 	.band-image2 {
 
 		background-image: url("Resources/band04.webp");
-		background-attachment: scroll;
+		background-attachment: fixed;
 		background-size: 100%;
 		background-position: center 60%;
 		margin: 0;
@@ -719,7 +725,7 @@ input {
 
 	.band-image3 {
 		background-image: url("Resources/Band03.webp");
-		background-attachment: scroll;
+		background-attachment: fixed;
 		background-size: 100%;
 		background-position: center 60%;
 		margin: 0;
