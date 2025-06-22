@@ -1235,14 +1235,6 @@ input {
 		width: 80%;
 	}
 
-	.links {
-		display: flex;
-		justify-content: space-evenly;
-		padding-top: 15%;
-		padding-left: 10%;
-		width: 80%;
-	}
-
 	.subscribe {
 		width: 100%;
 		margin: auto;
@@ -1307,14 +1299,26 @@ input {
 		text-shadow: var(--font-color2) 2px 0 10px;
 	}
 
+	.album-info {
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		font-size: 28px;
+		padding-top: 25%;
+		height: 80vh;
+		width: 75%;
+		margin-left: 15%;
+
+	}
+
 
 	.album-info img {
-		height: 300px;
-		width: 309px;
+		height: 400px;
+		width: 409px;
 		animation: slide-in-image;
 		box-shadow: 10px 5px 5px black;
 		animation-timeline: scroll();
-		animation-range: 10% 42%;
+		animation-range: 5% 30%;
 		animation-fill-mode: forwards;
 	}
 
@@ -1326,7 +1330,7 @@ input {
 		line-height: 1.5;
 		animation: slide-in-text;
 		animation-timeline: scroll();
-		animation-range: 10% 42%;
+		animation-range: 5% 30%;
 		animation-fill-mode: forwards;
 
 
@@ -1336,12 +1340,37 @@ input {
 		display: block;
 		margin: auto;
 		width: 100%;
-		padding-top: 10vh;
+		padding-top: 20vh;
 		padding-left: 20vw;
 		animation: slide-in-events;
 		animation-timeline: scroll();
-		animation-range: 35% 73%;
-		transform: scale(0.6);
+		animation-range: 25% 55%;
+		animation-fill-mode: forwards;
+	}
+
+	.container {
+		position: relative;
+		left: 10%;
+		width: 80vw;
+		height: 75vw;
+		padding-top: 5%;
+		overflow-x: visible;
+		transform: scale(0.1);
+		animation: zoom-in;
+		animation-timeline: scroll();
+		animation-range: 65% 78%;
+		animation-fill-mode: forwards;
+
+	}
+
+	.subscribe {
+		width: 100%;
+		margin: auto;
+		display: block;
+		font-size: 28px;
+		text-align: center;
+		padding-top: 20%;
+		padding-bottom: 2%;
 	}
 }
 
