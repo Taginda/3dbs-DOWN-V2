@@ -234,6 +234,8 @@ p>a {
 	text-decoration: none;
 }
 
+
+
 .band-image {
 	background: url("Resources/Band01.jpg");
 	background-attachment: fixed;
@@ -248,7 +250,7 @@ p>a {
 
 	background-image: url("Resources/band04.webp");
 	background-attachment: fixed;
-	background-size: 100vw;
+	background-size: cover;
 	margin: 0;
 	height: 50vh;
 	width: 100%;
@@ -293,10 +295,10 @@ p>a {
 .band-image3 {
 	background-image: url("Resources/Band03.webp");
 	background-attachment: fixed;
-	background-size: 100vw;
+	background-size: cover;
 	margin: 0;
 	height: 50vh;
-	width: 100vw;
+	width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	clip-path: polygon(0 20%, 100% 0, 100% 85%, 0 100%);
@@ -418,10 +420,10 @@ p>a {
 .band-image4 {
 	background-image: url("Resources/Matt01.jpg");
 	background-attachment: fixed;
-	background-size: 100vw;
+	background-size: cover;
 	margin: 0;
 	height: 50vh;
-	width: 100vw;
+	width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	clip-path: polygon(0 20%, 100% 0, 100% 85%, 0 100%);
@@ -446,7 +448,7 @@ p>a {
 	display: block;
 	font-size: 28px;
 	text-align: center;
-	padding-top: 15%;
+	padding-top: 10%;
 	padding-bottom: 2%;
 }
 
@@ -552,6 +554,14 @@ input {
 	}
 }
 
+.eng-logo {
+	display: block;
+	margin: auto;
+	height: 156px;
+	width: 442px;
+	padding-top: 4%;
+}
+
 
 
 
@@ -586,6 +596,44 @@ input {
 	.logo1 {
 		height: 100px;
 		width: 100px;
+	}
+
+	.nav-list {
+		display: none;
+		flex-direction: column;
+		background: #000;
+		position: absolute;
+		top: 30%;
+		right: -39%;
+		width: 200px;
+		z-index: 100;
+	}
+
+	.nav-list.open {
+		display: flex;
+	}
+
+	.hamburger {
+		position: absolute;
+		right: 5%;
+		top: 10%;
+		width: 40px;
+		height: 40px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		z-index: 101;
+
+	}
+
+	.hamburger span {
+		display: block;
+		height: 4px;
+		width: 30px;
+		background: var(--font-color1, #fff);
+		margin: 5px 0;
+		border-radius: 2px;
+		transition: 0.3s;
 	}
 
 	nav>ul {
@@ -835,6 +883,13 @@ input {
 		padding-bottom: 2%;
 	}
 
+	.eng-logo {
+		height: 76px;
+		width: 352px;
+		padding-top: 15%;
+
+	}
+
 }
 
 
@@ -860,8 +915,46 @@ input {
 
 
 	.logo1 {
-		height: 100px;
-		width: 100px;
+		height: 120px;
+		width: 120px;
+	}
+
+	.nav-list {
+		display: none;
+		flex-direction: column;
+		background: #000;
+		position: absolute;
+		top: 40%;
+		right: -10%;
+		width: 200px;
+		z-index: 100;
+	}
+
+	.nav-list.open {
+		display: flex;
+	}
+
+	.hamburger {
+		position: absolute;
+		right: 6%;
+		top: 6%;
+		width: 50px;
+		height: 50px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		z-index: 101;
+
+	}
+
+	.hamburger span {
+		display: block;
+		height: 4px;
+		width: 30px;
+		background: var(--font-color1, #fff);
+		margin: 5px 0;
+		border-radius: 2px;
+		transition: 0.3s;
 	}
 
 	nav>ul {
@@ -882,7 +975,7 @@ input {
 		width: 100%;
 		background: none;
 		overflow: hidden;
-		margin-top: -30%;
+		margin-top: -20%;
 
 	}
 
@@ -894,8 +987,8 @@ input {
 	}
 
 	.logo2 {
-		height: 70px;
-		width: 70px;
+		height: 100px;
+		width: 100px;
 		opacity: 0;
 		animation: opacityOn 0.1s 1.5s linear 1 forwards;
 	}
@@ -910,7 +1003,7 @@ input {
 
 	.title2 {
 		position: relative;
-		font-size: 20px;
+		font-size: 28px;
 		color: var(--font-color1);
 		bottom: 20px;
 		opacity: 0;
@@ -1066,8 +1159,8 @@ input {
 
 		>li::scroll-marker {
 			content: ' ';
-			width: 5vw;
-			height: 5vw;
+			width: 3vw;
+			height: 3vw;
 			aspect-ratio: 1/1;
 			border-radius: 100%;
 			border: 1px solid white;
@@ -1092,6 +1185,16 @@ input {
 
 	}
 
+	.subscribe {
+		width: 100%;
+		margin: auto;
+		display: block;
+		font-size: 28px;
+		text-align: center;
+		padding-top: 30%;
+		padding-bottom: 2%;
+	}
+
 	.links {
 		display: flex;
 		justify-content: space-evenly;
@@ -1099,6 +1202,13 @@ input {
 		padding-left: 10%;
 		width: 80%;
 	}
+
+	.eng-logo {
+		padding-top: 15%;
+
+	}
+
+
 
 }
 
@@ -1122,6 +1232,50 @@ input {
 		position: sticky;
 		top: 0;
 	}
+
+	.nav-list {
+		display: none;
+		flex-direction: column;
+		background: #000;
+		position: absolute;
+		top: 40%;
+		right: -10%;
+		width: 200px;
+		z-index: 100;
+	}
+
+	.nav-list.open {
+		display: flex;
+	}
+
+	.hamburger {
+		position: absolute;
+		right: 6%;
+		top: 6%;
+		width: 50px;
+		height: 50px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		z-index: 101;
+
+	}
+
+	.hamburger span {
+		display: block;
+		height: 4px;
+		width: 30px;
+		background: var(--font-color1, #fff);
+		margin: 5px 0;
+		border-radius: 2px;
+		transition: 0.3s;
+	}
+
+	.logo1 {
+		height: 150px;
+		width: 150px;
+	}
+
 
 	.video-wrap {
 		height: 60vw;
@@ -1244,6 +1398,13 @@ input {
 		padding-top: 50%;
 		padding-bottom: 2%;
 	}
+
+	.eng-logo {
+		height: 86px;
+		width: 362px;
+		padding-top: 15%;
+
+	}
 }
 
 
@@ -1255,13 +1416,18 @@ input {
 @media (max-width: 1400px) and (min-width: 1025px) {
 
 	header {
-		position: fixed;
+		position: sticky;
 	}
 
 	body {
 		margin: 0;
 		overflow-x: hidden;
 	}
+
+	.hamburger {
+		display: none;
+	}
+
 
 	nav>ul {
 		display: flex;
@@ -1298,6 +1464,8 @@ input {
 		animation: opacityOn 0.1s 3.0s linear 1 forwards;
 		text-shadow: var(--font-color2) 2px 0 10px;
 	}
+
+
 
 	.album-info {
 		display: flex;
@@ -1350,8 +1518,9 @@ input {
 
 	.container {
 		position: relative;
-		left: 10%;
+		left: 0;
 		width: 80vw;
+		margin: 0 auto;
 		height: 75vw;
 		padding-top: 5%;
 		overflow-x: visible;
@@ -1385,6 +1554,12 @@ input {
 		margin: 0;
 		overflow-x: hidden;
 	}
+
+	.hamburger {
+		display: none;
+	}
+
+
 
 	nav>ul {
 		display: flex;
@@ -1449,6 +1624,12 @@ input {
 		margin: 0;
 		overflow-x: hidden;
 	}
+
+	.hamburger {
+		display: none;
+	}
+
+
 
 
 
