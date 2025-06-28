@@ -784,6 +784,18 @@ input {
 		margin-top: 50%;
 	}
 
+	.band-image4 {
+		background-image: url("Resources/Matt01.jpg");
+		background-attachment: fixed;
+		background-size: 100%;
+		margin: 0;
+		height: 50vh;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		clip-path: polygon(0 20%, 100% 0, 100% 85%, 0 100%);
+	}
+
 	.container {
 		position: relative;
 		left: 0.5vw;
@@ -1104,6 +1116,18 @@ input {
 		margin-top: 50%;
 	}
 
+	.band-image4 {
+		background-image: url("Resources/Matt01.jpg");
+		background-attachment: fixed;
+		background-size: 100%;
+		margin: 0;
+		height: 50vh;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		clip-path: polygon(0 20%, 100% 0, 100% 85%, 0 100%);
+	}
+
 	.container {
 		position: relative;
 		left: 0.5vw;
@@ -1318,6 +1342,18 @@ input {
 		clip-path: polygon(0 20%, 100% 0, 100% 85%, 0 100%);
 	}
 
+	.band-image4 {
+		background-image: url("Resources/Matt01.jpg");
+		background-attachment: fixed;
+		background-size: 100%;
+		margin: 0;
+		height: 50vh;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		clip-path: polygon(0 20%, 100% 0, 100% 85%, 0 100%);
+	}
+
 	.album-info {
 		display: flex;
 		flex-direction: column;
@@ -1384,7 +1420,7 @@ input {
 	.links {
 		display: flex;
 		justify-content: space-evenly;
-		padding-top: 15%;
+		padding-top: 10%;
 		padding-left: 10%;
 		width: 80%;
 	}
@@ -1395,14 +1431,14 @@ input {
 		display: block;
 		font-size: 28px;
 		text-align: center;
-		padding-top: 50%;
-		padding-bottom: 2%;
+		padding-top: 15%;
+		padding-bottom: 0;
 	}
 
 	.eng-logo {
 		height: 86px;
 		width: 362px;
-		padding-top: 15%;
+		padding-top: 10%;
 
 	}
 }
