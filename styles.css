@@ -601,11 +601,11 @@ input {
 	.nav-list {
 		display: none;
 		flex-direction: column;
-		background: #000;
+		background: none;
 		position: absolute;
 		top: 30%;
-		right: -39%;
-		width: 200px;
+		right: -28%;
+		width: 45%;
 		z-index: 100;
 	}
 
@@ -615,7 +615,7 @@ input {
 
 	.hamburger {
 		position: absolute;
-		right: 5%;
+		right: 7%;
 		top: 10%;
 		width: 40px;
 		height: 40px;
@@ -934,7 +934,7 @@ input {
 	.nav-list {
 		display: none;
 		flex-direction: column;
-		background: #000;
+		background: none;
 		position: absolute;
 		top: 40%;
 		right: -10%;
@@ -1260,7 +1260,7 @@ input {
 	.nav-list {
 		display: none;
 		flex-direction: column;
-		background: #000;
+		background: none;
 		position: absolute;
 		top: 40%;
 		right: -10%;
